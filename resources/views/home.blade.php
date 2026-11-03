@@ -130,7 +130,7 @@
                     <a href="#" class="hover:text-brand-600 transition flex items-center gap-1.5 p-2 rounded-full hover:bg-brand-50">
                         <i class="fa-solid fa-mobile-screen text-emerald-500"></i> Unduh App
                     </a>
-                    <a href="#" class="hover:text-brand-600 transition p-2">Pesanan</a>
+                    <a href="{{ url('/pesanan') }} class="hover:text-brand-600 transition p-2">Pesanan</a>
                 </div>
 
                 <!-- Tombol Aksi -->

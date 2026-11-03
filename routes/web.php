@@ -31,3 +31,13 @@ Route::get('/detail', function () {
 Route::get('/checkout', function () {
     return view('checkout');
 });
+
+//succes
+Route::get('/success', function () {
+    return view('success');
+});
+
+//pesanan
+Route::get('/pesanan', function () {
+    return view('pesanan');
+});

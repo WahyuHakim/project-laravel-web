@@ -298,9 +298,9 @@
                             </div>
                         </div>
 
-                        <button type="submit" class="w-full py-4 rounded-2xl bg-brand-accent hover:bg-orange-600 text-white font-black text-base shadow-lg shadow-brand-accent/30 transition-transform hover:-translate-y-0.5">
-                            Bayar Sekarang <i class="fa-solid fa-arrow-right ml-2"></i>
-                        </button>
+                       <a href="{{ url('/success') }}" class="block text-center w-full py-4 rounded-2xl bg-brand-accent hover:bg-orange-600 text-white font-black text-base shadow-lg shadow-brand-accent/30 transition-transform hover:-translate-y-0.5">
+    Bayar Sekarang <i class="fa-solid fa-arrow-right ml-2"></i>
+</a>
                         
                         <p class="text-[10px] text-center text-slate-400 font-medium mt-4">Dengan menekan tombol, kamu menyetujui Syarat & Ketentuan yang berlaku.</p>
                     </div>
