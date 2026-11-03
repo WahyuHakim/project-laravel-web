@@ -134,15 +134,14 @@
                 </div>
 
                 <!-- Tombol Aksi -->
-                <div class="flex items-center gap-3">
-                    <a href="#" class="hidden sm:block px-5 py-2.5 rounded-full text-slate-700 font-bold hover:bg-slate-100 transition text-sm">
-                        Sign In
-                    </a>
-                    <a href="#" class="px-6 py-2.5 rounded-full bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-lg shadow-brand-500/30 transition-all hover:-translate-y-0.5">
-                        Daftar
-                    </a>
-                </div>
-            </div>
+<div class="flex items-center gap-3">
+    <a href="{{ url('/login') }}" class="hidden sm:block px-5 py-2.5 rounded-full text-slate-700 font-bold hover:bg-slate-100 transition text-sm">
+        Sign In
+    </a>
+    <a href="{{ url('/register') }}" class="px-6 py-2.5 rounded-full bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-lg shadow-brand-500/30 transition-all hover:-translate-y-0.5">
+        Daftar
+    </a>
+</div>
         </nav>
     </div>
 
@@ -211,7 +210,7 @@
                 </div>
 
                 <!-- Formulir Pencarian (Bentuk Kapsul/Rounded Penuh) -->
-                <form class="mt-6 flex flex-col md:flex-row gap-3">
+                <form action="{{ url('/search') }}" method="GET" class="mt-6 flex flex-col md:flex-row gap-3">
                     
                     <!-- Destinasi -->
                     <div class="flex-1 glass-input rounded-3xl p-3 px-5 flex items-center gap-4 cursor-text">
@@ -252,7 +251,7 @@
                     </div>
 
                     <!-- Tombol Cari -->
-                    <button type="button" class="md:w-[72px] h-[72px] w-full rounded-3xl bg-brand-accent hover:bg-orange-600 text-white flex items-center justify-center text-2xl shadow-lg shadow-orange-500/30 transition-transform hover:scale-105 flex-shrink-0">
+                    <button type="submit" class="md:w-[72px] h-[72px] w-full rounded-3xl bg-brand-accent hover:bg-orange-600 text-white flex items-center justify-center text-2xl shadow-lg shadow-orange-500/30 transition-transform hover:scale-105 flex-shrink-0">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
 
@@ -490,7 +489,7 @@
         </div>
     </section>
 
-    <!-- ========================================================================= -->
+<!-- ========================================================================= -->
     <!-- 6. KATALOG HOTEL (Floating Rounded Elements)                              -->
     <!-- ========================================================================= -->
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 relative">
@@ -507,7 +506,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             
             <!-- Hotel 1 -->
-            <div class="glass-card rounded-[2rem] p-2 hover:-translate-y-1 transition duration-300 group cursor-pointer flex flex-col">
+            <a href="{{ url('/detail') }}" class="glass-card rounded-[2rem] p-2 hover:-translate-y-1 transition duration-300 group cursor-pointer flex flex-col">
                 <div class="relative h-48 rounded-[1.5rem] overflow-hidden">
                     <img src="https://img.cnt.traveloka.com/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10004607-cd602b5d5dbc65d02fe83abffcca5585.jpeg?tr=q-40,c-at_max,w-540,h-960" alt="Hotel" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
                     <div class="absolute top-2 left-2 bg-white/90 backdrop-blur text-slate-900 px-3 py-1 rounded-full text-[10px] font-black shadow-sm">Denpasar Barat</div>
@@ -526,10 +525,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
             <!-- Hotel 2 -->
-            <div class="glass-card rounded-[2rem] p-2 hover:-translate-y-1 transition duration-300 group cursor-pointer flex flex-col">
+            <a href="{{ url('/detail') }}" class="glass-card rounded-[2rem] p-2 hover:-translate-y-1 transition duration-300 group cursor-pointer flex flex-col">
                 <div class="relative h-48 rounded-[1.5rem] overflow-hidden">
                     <img src="https://img.cnt.traveloka.com/tvlk/apr-asset/Ixf4aptF5N2Qdfmh4fGGYhTN274kJXuNMkUAzpL5HuD9jzSxIGG5kZNhhHY-p7nw/hotel/asset/10000126-cc968d77183bab6237a5c3b5de6332cd.png?tr=q-40,c-at_max,w-540,h-960" alt="Hotel" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
                     <div class="absolute top-2 left-2 bg-white/90 backdrop-blur text-slate-900 px-3 py-1 rounded-full text-[10px] font-black shadow-sm">Kuta, Bali</div>
@@ -548,10 +547,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
             <!-- Hotel 3 -->
-            <div class="glass-card rounded-[2rem] p-2 hover:-translate-y-1 transition duration-300 group cursor-pointer flex flex-col">
+            <a href="{{ url('/detail') }}" class="glass-card rounded-[2rem] p-2 hover:-translate-y-1 transition duration-300 group cursor-pointer flex flex-col">
                 <div class="relative h-48 rounded-[1.5rem] overflow-hidden">
                     <img src="https://img.cnt.traveloka.com/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10013035-1200x845-FIT_AND_TRIM-affbbd70857894e2e5d0a3fbc7e91c67.jpeg?tr=q-40,c-at_max,w-540,h-960" alt="Hotel" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
                     <div class="absolute top-2 left-2 bg-white/90 backdrop-blur text-slate-900 px-3 py-1 rounded-full text-[10px] font-black shadow-sm">Kemang</div>
@@ -570,10 +569,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
             <!-- Hotel 4 -->
-            <div class="glass-card rounded-[2rem] p-2 hover:-translate-y-1 transition duration-300 group cursor-pointer flex flex-col">
+            <a href="{{ url('/detail') }}" class="glass-card rounded-[2rem] p-2 hover:-translate-y-1 transition duration-300 group cursor-pointer flex flex-col">
                 <div class="relative h-48 rounded-[1.5rem] overflow-hidden">
                     <img src="https://img.cnt.traveloka.com/tvlk/apr-asset/Ixf4aptF5N2Qdfmh4fGGYhTN274kJXuNMkUAzpL5HuD9jzSxIGG5kZNhhHY-p7nw/hotel/asset/20047598-f8a7c7b6207e60a0bed6705fcc07e6bb.jpeg?tr=q-40,c-at_max,w-540,h-960" alt="Hotel" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
                     <div class="absolute top-2 left-2 bg-white/90 backdrop-blur text-slate-900 px-3 py-1 rounded-full text-[10px] font-black shadow-sm">Lembang</div>
@@ -592,7 +591,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
         </div>
     </section>
