@@ -166,21 +166,31 @@
                 <!-- Peta Mini -->
                 <div class="glass-card rounded-[2rem] p-3">
                     <div class="w-full h-48 bg-slate-200 rounded-[1.5rem] overflow-hidden relative">
-                        <!-- Placeholder Peta Google -->
-                        <img src="https://developers.google.com/static/maps/images/landing/hero_maps_static_api.png" class="w-full h-full object-cover opacity-80">
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <button class="px-5 py-2 bg-white text-slate-900 text-xs font-bold rounded-full shadow-lg hover:scale-105 transition"><i class="fa-solid fa-map-location-dot text-brand-500 mr-2"></i>Buka Peta</button>
-                        </div>
+                        <iframe
+                            title="Peta lokasi grandkemang Hotel"
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=106.7985%2C-6.2709%2C106.8285%2C-6.2509&amp;layer=mapnik&amp;marker=-6.2609%2C106.8135"
+                            class="h-full w-full border-0"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            allowfullscreen>
+                        </iframe>
+                        <a
+                            href="https://www.google.com/maps/search/?api=1&amp;query=grandkemang+Hotel%2C+Jl.+Kemang+Raya+No.+2H%2C+Jakarta+Selatan"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white px-5 py-2 text-xs font-bold text-slate-900 shadow-lg transition hover:scale-105 hover:text-brand-700">
+                            <i class="fa-solid fa-map-location-dot mr-2 text-brand-500"></i>Buka Peta
+                        </a>
                     </div>
                     <div class="mt-4 px-3 pb-2 text-xs text-slate-600">
-                        <div class="flex justify-between items-center mb-2">
-                            <span class="font-medium"><i class="fa-solid fa-train text-slate-400 mr-1.5"></i> Stasiun MRT Blok M</span>
+                        <a href="https://www.google.com/maps/search/?api=1&amp;query=Stasiun+MRT+Blok+M%2C+Jakarta" target="_blank" rel="noopener noreferrer" class="mb-2 flex items-center justify-between transition hover:text-brand-700">
+                            <span class="font-medium"><i class="fa-solid fa-train mr-1.5 text-slate-400"></i> Stasiun MRT Blok M <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-[9px] text-brand-500"></i></span>
                             <span class="font-bold">1.8 km</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <span class="font-medium"><i class="fa-solid fa-shop text-slate-400 mr-1.5"></i> Lippo Mall Kemang</span>
+                        </a>
+                        <a href="https://www.google.com/maps/search/?api=1&amp;query=Lippo+Mall+Kemang%2C+Jakarta" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between transition hover:text-brand-700">
+                            <span class="font-medium"><i class="fa-solid fa-shop mr-1.5 text-slate-400"></i> Lippo Mall Kemang <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-[9px] text-brand-500"></i></span>
                             <span class="font-bold">850 m</span>
-                        </div>
+                        </a>
                     </div>
                 </div>
 

@@ -172,41 +172,36 @@
                 
                 <!-- Bubble Tabs (Melengkung penuh) -->
                 <div class="flex items-center gap-3 overflow-x-auto no-scrollbar pb-6 border-b border-slate-200/50">
-                    <button class="flex flex-col items-center justify-center gap-1.5 min-w-[90px] h-[80px] rounded-[1.5rem] bg-brand-600 text-white shadow-lg shadow-brand-500/30 transition-transform hover:-translate-y-1 flex-shrink-0">
+                    <a href="{{ route('services.show', ['service' => 'hotel']) }}" class="flex flex-col items-center justify-center gap-1.5 min-w-[90px] h-[80px] rounded-[1.5rem] bg-brand-600 text-white shadow-lg shadow-brand-500/30 transition-transform hover:-translate-y-1 flex-shrink-0">
                         <i class="fa-solid fa-hotel text-2xl"></i>
                         <span class="text-[11px] font-bold">Hotel</span>
-                    </button>
+                    </a>
                     
-                    <button class="flex flex-col items-center justify-center gap-1.5 min-w-[90px] h-[80px] rounded-[1.5rem] bg-white/60 hover:bg-white text-slate-600 hover:text-brand-600 transition-all hover:-translate-y-1 flex-shrink-0 shadow-sm border border-white">
+                    <a href="{{ route('services.show', ['service' => 'pesawat']) }}" class="flex flex-col items-center justify-center gap-1.5 min-w-[90px] h-[80px] rounded-[1.5rem] bg-white/60 hover:bg-white text-slate-600 hover:text-brand-600 transition-all hover:-translate-y-1 flex-shrink-0 shadow-sm border border-white">
                         <i class="fa-solid fa-plane-departure text-2xl"></i>
                         <span class="text-[11px] font-bold">Pesawat</span>
-                    </button>
+                    </a>
 
-                    <button class="relative flex flex-col items-center justify-center gap-1.5 min-w-[90px] h-[80px] rounded-[1.5rem] bg-white/60 hover:bg-white text-slate-600 hover:text-brand-600 transition-all hover:-translate-y-1 flex-shrink-0 shadow-sm border border-white">
+                    <a href="{{ route('services.show', ['service' => 'kereta-api']) }}" class="relative flex flex-col items-center justify-center gap-1.5 min-w-[90px] h-[80px] rounded-[1.5rem] bg-white/60 hover:bg-white text-slate-600 hover:text-brand-600 transition-all hover:-translate-y-1 flex-shrink-0 shadow-sm border border-white">
                         <span class="absolute -top-2.5 bg-brand-accent text-white text-[9px] font-black px-2 py-0.5 rounded-full shadow-sm">Baru!</span>
                         <i class="fa-solid fa-train text-2xl"></i>
                         <span class="text-[11px] font-bold">Kereta Api</span>
-                    </button>
+                    </a>
 
-                    <button class="flex flex-col items-center justify-center gap-1.5 min-w-[90px] h-[80px] rounded-[1.5rem] bg-white/60 hover:bg-white text-slate-600 hover:text-brand-600 transition-all hover:-translate-y-1 flex-shrink-0 shadow-sm border border-white">
+                    <a href="{{ route('services.show', ['service' => 'bus-travel']) }}" class="flex flex-col items-center justify-center gap-1.5 min-w-[90px] h-[80px] rounded-[1.5rem] bg-white/60 hover:bg-white text-slate-600 hover:text-brand-600 transition-all hover:-translate-y-1 flex-shrink-0 shadow-sm border border-white">
                         <i class="fa-solid fa-bus text-2xl"></i>
                         <span class="text-[11px] font-bold">Bus & Travel</span>
-                    </button>
+                    </a>
 
-                    <button class="flex flex-col items-center justify-center gap-1.5 min-w-[90px] h-[80px] rounded-[1.5rem] bg-white/60 hover:bg-white text-slate-600 hover:text-brand-600 transition-all hover:-translate-y-1 flex-shrink-0 shadow-sm border border-white">
+                    <a href="{{ route('services.show', ['service' => 'antar-bandara']) }}" class="flex flex-col items-center justify-center gap-1.5 min-w-[90px] h-[80px] rounded-[1.5rem] bg-white/60 hover:bg-white text-slate-600 hover:text-brand-600 transition-all hover:-translate-y-1 flex-shrink-0 shadow-sm border border-white">
                         <i class="fa-solid fa-van-shuttle text-2xl"></i>
                         <span class="text-[11px] font-bold text-center">Antar Bandara</span>
-                    </button>
+                    </a>
 
-                    <button class="flex flex-col items-center justify-center gap-1.5 min-w-[90px] h-[80px] rounded-[1.5rem] bg-white/60 hover:bg-white text-slate-600 hover:text-brand-600 transition-all hover:-translate-y-1 flex-shrink-0 shadow-sm border border-white">
-                        <i class="fa-solid fa-car text-2xl"></i>
-                        <span class="text-[11px] font-bold">Rental Mobil</span>
-                    </button>
-
-                    <button class="flex flex-col items-center justify-center gap-1.5 min-w-[90px] h-[80px] rounded-[1.5rem] bg-white/60 hover:bg-white text-slate-600 hover:text-brand-600 transition-all hover:-translate-y-1 flex-shrink-0 shadow-sm border border-white">
+                    <a href="{{ route('services.show', ['service' => 'atraksi']) }}" class="flex flex-col items-center justify-center gap-1.5 min-w-[90px] h-[80px] rounded-[1.5rem] bg-white/60 hover:bg-white text-slate-600 hover:text-brand-600 transition-all hover:-translate-y-1 flex-shrink-0 shadow-sm border border-white">
                         <i class="fa-solid fa-ticket text-2xl"></i>
                         <span class="text-[11px] font-bold text-center">Atraksi</span>
-                    </button>
+                    </a>
                 </div>
 
                 <!-- Formulir Pencarian (Bentuk Kapsul/Rounded Penuh) -->
@@ -260,10 +255,10 @@
                 <!-- Sub filter Tipe (Pills) -->
                 <div class="flex items-center gap-2 mt-5 overflow-x-auto no-scrollbar">
                     <span class="text-[11px] font-bold text-slate-400 mr-2">Filter Cepat:</span>
-                    <button class="px-4 py-1.5 rounded-full bg-brand-50 border border-brand-200 text-brand-600 text-xs font-bold flex-shrink-0">Semua Tipe</button>
-                    <button class="px-4 py-1.5 rounded-full bg-white/60 hover:bg-white border border-slate-200 text-slate-600 hover:text-brand-600 transition text-xs font-bold flex-shrink-0 flex items-center gap-1.5"><i class="fa-solid fa-hotel text-slate-400"></i> Hotel</button>
-                    <button class="px-4 py-1.5 rounded-full bg-white/60 hover:bg-white border border-slate-200 text-slate-600 hover:text-brand-600 transition text-xs font-bold flex-shrink-0 flex items-center gap-1.5"><i class="fa-solid fa-house-chimney text-slate-400"></i> Villa</button>
-                    <button class="px-4 py-1.5 rounded-full bg-white/60 hover:bg-white border border-slate-200 text-slate-600 hover:text-brand-600 transition text-xs font-bold flex-shrink-0 flex items-center gap-1.5"><i class="fa-solid fa-building text-slate-400"></i> Apartemen</button>
+                    <button type="button" data-stay-filter="all" aria-pressed="true" class="stay-filter is-active px-4 py-1.5 rounded-full bg-brand-50 border border-brand-200 text-brand-600 text-xs font-bold flex-shrink-0 transition">Semua Tipe</button>
+                    <button type="button" data-stay-filter="hotel" aria-pressed="false" class="stay-filter px-4 py-1.5 rounded-full bg-white/60 hover:bg-white border border-slate-200 text-slate-600 hover:text-brand-600 transition text-xs font-bold flex-shrink-0 flex items-center gap-1.5"><i class="fa-solid fa-hotel text-slate-400"></i> Hotel</button>
+                    <button type="button" data-stay-filter="villa" aria-pressed="false" class="stay-filter px-4 py-1.5 rounded-full bg-white/60 hover:bg-white border border-slate-200 text-slate-600 hover:text-brand-600 transition text-xs font-bold flex-shrink-0 flex items-center gap-1.5"><i class="fa-solid fa-house-chimney text-slate-400"></i> Villa</button>
+                    <button type="button" data-stay-filter="apartemen" aria-pressed="false" class="stay-filter px-4 py-1.5 rounded-full bg-white/60 hover:bg-white border border-slate-200 text-slate-600 hover:text-brand-600 transition text-xs font-bold flex-shrink-0 flex items-center gap-1.5"><i class="fa-solid fa-building text-slate-400"></i> Apartemen</button>
                 </div>
 
             </div>
@@ -350,10 +345,10 @@
                 
                 <div class="flex items-start gap-4 mb-4">
                     <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-xl font-black flex-shrink-0">
-                        <i class="fa-solid fa-car"></i>
+                        <i class="fa-solid fa-van-shuttle"></i>
                     </div>
                     <div>
-                        <span class="inline-block px-2 py-0.5 rounded-md bg-emerald-50 text-emerald-600 text-[10px] font-black uppercase mb-1">Bandara & Rental</span>
+                        <span class="inline-block px-2 py-0.5 rounded-md bg-emerald-50 text-emerald-600 text-[10px] font-black uppercase mb-1">Antar Bandara</span>
                         <h3 class="font-black text-slate-900 leading-tight text-base">Cashback 15%</h3>
                         <p class="text-xs text-slate-500 mt-1">Antar jemput tepat waktu.</p>
                     </div>
@@ -503,10 +498,10 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div id="stay-listings" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             
             <!-- Hotel 1 -->
-            <a href="{{ url('/detail') }}" class="glass-card rounded-[2rem] p-2 hover:-translate-y-1 transition duration-300 group cursor-pointer flex flex-col">
+            <a data-stay-type="hotel" href="{{ url('/detail') }}" class="stay-card glass-card rounded-[2rem] p-2 hover:-translate-y-1 transition duration-300 group cursor-pointer flex flex-col">
                 <div class="relative h-48 rounded-[1.5rem] overflow-hidden">
                     <img src="https://img.cnt.traveloka.com/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10004607-cd602b5d5dbc65d02fe83abffcca5585.jpeg?tr=q-40,c-at_max,w-540,h-960" alt="Hotel" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
                     <div class="absolute top-2 left-2 bg-white/90 backdrop-blur text-slate-900 px-3 py-1 rounded-full text-[10px] font-black shadow-sm">Denpasar Barat</div>
@@ -528,7 +523,7 @@
             </a>
 
             <!-- Hotel 2 -->
-            <a href="{{ url('/detail') }}" class="glass-card rounded-[2rem] p-2 hover:-translate-y-1 transition duration-300 group cursor-pointer flex flex-col">
+            <a data-stay-type="hotel" href="{{ url('/detail') }}" class="stay-card glass-card rounded-[2rem] p-2 hover:-translate-y-1 transition duration-300 group cursor-pointer flex flex-col">
                 <div class="relative h-48 rounded-[1.5rem] overflow-hidden">
                     <img src="https://img.cnt.traveloka.com/tvlk/apr-asset/Ixf4aptF5N2Qdfmh4fGGYhTN274kJXuNMkUAzpL5HuD9jzSxIGG5kZNhhHY-p7nw/hotel/asset/10000126-cc968d77183bab6237a5c3b5de6332cd.png?tr=q-40,c-at_max,w-540,h-960" alt="Hotel" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
                     <div class="absolute top-2 left-2 bg-white/90 backdrop-blur text-slate-900 px-3 py-1 rounded-full text-[10px] font-black shadow-sm">Kuta, Bali</div>
@@ -550,7 +545,7 @@
             </a>
 
             <!-- Hotel 3 -->
-            <a href="{{ url('/detail') }}" class="glass-card rounded-[2rem] p-2 hover:-translate-y-1 transition duration-300 group cursor-pointer flex flex-col">
+            <a data-stay-type="hotel" href="{{ url('/detail') }}" class="stay-card glass-card rounded-[2rem] p-2 hover:-translate-y-1 transition duration-300 group cursor-pointer flex flex-col">
                 <div class="relative h-48 rounded-[1.5rem] overflow-hidden">
                     <img src="https://img.cnt.traveloka.com/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10013035-1200x845-FIT_AND_TRIM-affbbd70857894e2e5d0a3fbc7e91c67.jpeg?tr=q-40,c-at_max,w-540,h-960" alt="Hotel" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
                     <div class="absolute top-2 left-2 bg-white/90 backdrop-blur text-slate-900 px-3 py-1 rounded-full text-[10px] font-black shadow-sm">Kemang</div>
@@ -572,7 +567,7 @@
             </a>
 
             <!-- Hotel 4 -->
-            <a href="{{ url('/detail') }}" class="glass-card rounded-[2rem] p-2 hover:-translate-y-1 transition duration-300 group cursor-pointer flex flex-col">
+            <a data-stay-type="hotel" href="{{ url('/detail') }}" class="stay-card glass-card rounded-[2rem] p-2 hover:-translate-y-1 transition duration-300 group cursor-pointer flex flex-col">
                 <div class="relative h-48 rounded-[1.5rem] overflow-hidden">
                     <img src="https://img.cnt.traveloka.com/tvlk/apr-asset/Ixf4aptF5N2Qdfmh4fGGYhTN274kJXuNMkUAzpL5HuD9jzSxIGG5kZNhhHY-p7nw/hotel/asset/20047598-f8a7c7b6207e60a0bed6705fcc07e6bb.jpeg?tr=q-40,c-at_max,w-540,h-960" alt="Hotel" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
                     <div class="absolute top-2 left-2 bg-white/90 backdrop-blur text-slate-900 px-3 py-1 rounded-full text-[10px] font-black shadow-sm">Lembang</div>
@@ -590,6 +585,32 @@
                             <span class="font-black text-accent text-lg">Rp 392.763</span>
                         </div>
                     </div>
+                </div>
+            </a>
+
+            <!-- Villa dummy mengikuti atribut kamar_hotel pada ERD -->
+            <a data-stay-type="villa" href="{{ url('/detail') }}" class="stay-card glass-card rounded-[2rem] p-2 hover:-translate-y-1 transition duration-300 group cursor-pointer flex flex-col">
+                <div class="relative h-48 rounded-[1.5rem] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=960&q=85" alt="Villa dengan kolam renang di Ubud" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <span class="absolute top-2 left-2 rounded-full bg-white/90 px-3 py-1 text-[10px] font-black text-slate-900">Ubud, Bali</span>
+                    <span class="absolute top-2 right-2 rounded-full bg-brand-600/90 px-3 py-1 text-[10px] font-black text-white">Villa</span>
+                </div>
+                <div class="p-4 flex-1 flex flex-col justify-between">
+                    <div><h3 class="font-black text-slate-900 text-sm">Paviliun Padi Ubud</h3><p class="mt-1 text-[11px] font-bold text-brand-600">Garden Villa · Kolam renang pribadi</p></div>
+                    <div class="mt-4 flex items-end justify-between border-t border-slate-100 pt-3"><span class="text-xs text-slate-400">5 kamar tersedia</span><span class="font-black text-accent text-lg">Rp 980.000 <small class="text-xs">/ malam</small></span></div>
+                </div>
+            </a>
+
+            <!-- Apartemen dummy mengikuti atribut kamar_hotel pada ERD -->
+            <a data-stay-type="apartemen" href="{{ url('/detail') }}" class="stay-card glass-card rounded-[2rem] p-2 hover:-translate-y-1 transition duration-300 group cursor-pointer flex flex-col">
+                <div class="relative h-48 rounded-[1.5rem] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=960&q=85" alt="Apartemen modern di Jakarta" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <span class="absolute top-2 left-2 rounded-full bg-white/90 px-3 py-1 text-[10px] font-black text-slate-900">Kuningan, Jakarta</span>
+                    <span class="absolute top-2 right-2 rounded-full bg-brand-600/90 px-3 py-1 text-[10px] font-black text-white">Apartemen</span>
+                </div>
+                <div class="p-4 flex-1 flex flex-col justify-between">
+                    <div><h3 class="font-black text-slate-900 text-sm">Urban Suites Kuningan</h3><p class="mt-1 text-[11px] font-bold text-brand-600">Studio Premium · Wi-Fi, dapur, gym</p></div>
+                    <div class="mt-4 flex items-end justify-between border-t border-slate-100 pt-3"><span class="text-xs text-slate-400">9 kamar tersedia</span><span class="font-black text-accent text-lg">Rp 650.000 <small class="text-xs">/ malam</small></span></div>
                 </div>
             </a>
 
@@ -723,7 +744,6 @@
                         <li><a href="#" class="hover:text-brand-600 transition">Hotel & Resort</a></li>
                         <li><a href="#" class="hover:text-brand-600 transition">Tiket Pesawat</a></li>
                         <li><a href="#" class="hover:text-brand-600 transition">Kereta Api</a></li>
-                        <li><a href="#" class="hover:text-brand-600 transition">Rental Mobil</a></li>
                     </ul>
                 </div>
 
@@ -759,6 +779,34 @@
     <!-- JAVASCRIPT: NAVBAR SCROLL EFFECT                                          -->
     <!-- ========================================================================= -->
     <script>
+        const stayFilters = document.querySelectorAll('[data-stay-filter]');
+        const stayCards = document.querySelectorAll('[data-stay-type]');
+
+        stayFilters.forEach((filter) => {
+            filter.addEventListener('click', () => {
+                const selectedType = filter.dataset.stayFilter;
+
+                stayFilters.forEach((button) => {
+                    const active = button === filter;
+                    button.setAttribute('aria-pressed', String(active));
+                    button.classList.toggle('is-active', active);
+                    button.classList.toggle('bg-brand-50', active);
+                    button.classList.toggle('border-brand-200', active);
+                    button.classList.toggle('text-brand-600', active);
+                    button.classList.toggle('bg-white/70', !active);
+                    button.classList.toggle('border-slate-200', !active);
+                    button.classList.toggle('text-slate-600', !active);
+                });
+
+                stayCards.forEach((card) => {
+                    const visible = selectedType === 'all' || card.dataset.stayType === selectedType;
+                    card.style.display = visible ? '' : 'none';
+                });
+
+                document.getElementById('stay-listings').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            });
+        });
+
         const navbarWrapper = document.getElementById('navbar-wrapper');
         const navbar = document.getElementById('navbar');
 
